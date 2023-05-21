@@ -93,7 +93,7 @@ function VocabularyGame({
 			</form>
 			<div className="finish-button-container">
 				<Link to="/vocabulary" className="game__finish-button">
-					Finish
+					Done Practicing
 				</Link>
 			</div>
 		</div>

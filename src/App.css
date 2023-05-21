@@ -311,7 +311,9 @@ h2 {
 	display: flex;
 	font-size: 14px;
 	font-weight: 600;
-	min-height: 70px;
+	max-width: 200px;
+	margin: 0 auto;
+	min-height: 40px;
 	justify-content: center;
 	text-decoration: none;
 	padding: 8px 16px;
