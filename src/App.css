@@ -5,10 +5,15 @@
 	box-sizing: border-box;
 }
 
-.main-container {
+body {
 	background-color: #031926; /* Dark Blue */
+}
+
+.main-container {
 	color: #fff;
 	text-align: center;
+	max-width: 900px;
+	margin: 0 auto;
 }
 
 /* Home Page */
