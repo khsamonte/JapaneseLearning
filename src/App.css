@@ -328,4 +328,9 @@ h2 {
 	.vocabulary-button {
 		min-height: 40px;
 	}
+
+	.game__word-display {
+		font-size: 36px;
+		padding: 20px 40px;
+	}
 }
