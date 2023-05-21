@@ -35,9 +35,15 @@ function VocabularyGame({
 			} else {
 				setResult("wrong");
 
-				let substr = currentWord.meaning.forEach(
-					(ans) => ans.toLowerCase + " / "
-				);
+				let substr = "";
+				currentWord.meaning.forEach((ans, idx) => {
+					if (idx === currentWord.meaning.length - 1) {
+						substr += ans;
+					} else {
+						substr += ans + " or ";
+					}
+					return substr;
+				});
 				setCorrectAnswer(substr);
 			}
 		} else if (
