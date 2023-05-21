@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+localStorage.setItem("isAuthenticated", false);
+
 function Vocabulary({
 	selectedCategories,
 	setSelectedCategories,
@@ -10,7 +12,7 @@ function Vocabulary({
 	const categories = [
 		"Chapter 1",
 		"Family",
-		// "Demonstratives",
+		"Demonstratives",
 		// "Chapter 2",
 		// "Locatives",
 		// "Chapter 3",

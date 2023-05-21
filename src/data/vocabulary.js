@@ -363,10 +363,145 @@ const family = [
 	},
 ];
 
+const demonstratives = [
+	{
+		kana: "この",
+		kanji: "この",
+		romaji: "kono",
+		meaning: "this",
+	},
+	{
+		kana: "その",
+		kanji: "その",
+		romaji: "sono",
+		meaning: "that",
+	},
+	{
+		kana: "あの",
+		kanji: "あの",
+		romaji: "ano",
+		meaning: "that",
+	},
+	{
+		kana: "どの",
+		kanji: "どの",
+		romaji: "dono",
+		meaning: "which",
+	},
+	{
+		kana: "これ",
+		kanji: "これ",
+		romaji: "kore",
+		meaning: ["this", "this one"],
+	},
+	{
+		kana: "それ",
+		kanji: "それ",
+		romaji: "sore",
+		meaning: ["that", "that one"],
+	},
+	{
+		kana: "あれ",
+		kanji: "あれ",
+		romaji: "are",
+		meaning: ["that", "that one"],
+	},
+	{
+		kana: "どれ",
+		kanji: "どれ",
+		romaji: "dore",
+		meaning: ["which", "which one"],
+	},
+	{
+		kana: "ここ",
+		kanji: "ここ",
+		romaji: "koko",
+		meaning: "here",
+	},
+	{
+		kana: "そこ",
+		kanji: "そこ",
+		romaji: "soko",
+		meaning: "there",
+	},
+	{
+		kana: "あそこ",
+		kanji: "あそこ",
+		romaji: "asoko",
+		meaning: "over there",
+	},
+	{
+		kana: "どこ",
+		kanji: "どこ",
+		romaji: "doko",
+		meaning: "where",
+	},
+	{
+		kana: "こちら",
+		kanji: "こちら",
+		romaji: "kochira",
+		meaning: "this way",
+	},
+	{
+		kana: "そちら",
+		kanji: "そちら",
+		romaji: "sochira",
+		meaning: "that way",
+	},
+	{
+		kana: "あちら",
+		kanji: "あちら",
+		romaji: "achira",
+		meaning: "that way",
+	},
+	{
+		kana: "どちら",
+		kanji: "どちら",
+		romaji: "dochira",
+		meaning: "which way",
+	},
+	{
+		kana: "どなた",
+		kanji: "どなた",
+		romaji: "donata",
+		meaning: "who",
+	},
+	{
+		kana: "だれ",
+		kanji: "だれ",
+		romaji: "dare",
+		meaning: "who",
+	},
+	{
+		kana: "どなたの",
+		kanji: "どなたの",
+		romaji: "donata no",
+		meaning: "whose",
+	},
+	{
+		kana: "だれの",
+		kanji: "だれの",
+		romaji: "dare no",
+		meaning: "whose",
+	},
+	{
+		kana: "なん / なに",
+		kanji: "なん / なに",
+		romaji: "nan / nani",
+		meaning: "what",
+	},
+	{
+		kana: "なんの",
+		kanji: "なんの",
+		romaji: "nanno",
+		meaning: "what kind of",
+	},
+];
+
 export const vocabularies = {
 	"Chapter 1": chapter1,
 	Family: family,
-	Demonstratives: [],
+	Demonstratives: demonstratives,
 	"Chapter 2": [],
 	Locatives: [],
 	"Chapter 3": [],

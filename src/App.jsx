@@ -30,7 +30,6 @@ function App() {
 				/>
 				<Route
 					path="/vocabulary-game"
-					exact
 					element={
 						<VocabularyGame
 							vocabularies={vocabularies}

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { shuffle } from "lodash";
 
+localStorage.setItem("isAuthenticated", true);
+
 function VocabularyGame({
 	vocabularies,
 	selectedCategories,
