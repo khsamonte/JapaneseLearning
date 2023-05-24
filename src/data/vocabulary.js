@@ -1007,6 +1007,27 @@ const chapter3 = [
   },
 ];
 
+const interrogativesForCounters = [
+  {
+    kanji: "幾つ",
+    kana: "いくつ",
+    romaji: "ikutsu",
+    meaning: "how many",
+  },
+  {
+    kanji: "何歳",
+    kana: "なんさい",
+    romaji: "nansai",
+    meaning: ["how old", "what age"],
+  },
+  {
+    kanji: "何人",
+    kana: "なんにん",
+    romaji: "nannin",
+    meaning: "how many people",
+  },
+];
+
 export const vocabularies = {
   "Chapter 1": chapter1,
   Family: family,
@@ -1014,8 +1035,9 @@ export const vocabularies = {
   "Chapter 2": chapter2,
   Locatives: locatives,
   "Chapter 3": chapter3,
-  Numbers: numbers,
+  "Numbers (1-99)": numbers,
   Counters: [],
+  InterrogativesForCounters: interrogativesForCounters,
   "Chapter 4": [],
   Time: [],
   Date: [],

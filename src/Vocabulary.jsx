@@ -16,7 +16,7 @@ function Vocabulary({
     "Chapter 2",
     "Locatives",
     "Chapter 3",
-    // "Numbers",
+    "Numbers (1-99)",
     // "Counters",
     // "Chapter 4",
     // "Time",
