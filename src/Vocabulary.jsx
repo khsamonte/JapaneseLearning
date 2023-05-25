@@ -18,7 +18,7 @@ function Vocabulary({
     "Chapter 3",
     "Numbers (1-99)",
     // "Counters",
-    // "Chapter 4",
+    "Chapter 4",
     // "Time",
     // "Date",
     // "Non-specific Time Expressions",
