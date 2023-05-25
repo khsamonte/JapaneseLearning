@@ -170,7 +170,7 @@ h2 {
 }
 
 .script-button.button-selected {
-	background-color: #008cba; /* Tangerine */
+	background-color: #ffa500; /* Tangerine */
 	color: #003366; /* Dark Blue */
 }
 
@@ -219,6 +219,7 @@ h2 {
 	align-items: center;
 	justify-content: flex-start;
 	min-height: 100vh;
+	padding-top: 60px;
 }
 
 /* Game Section */

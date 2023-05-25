@@ -149,7 +149,7 @@ const chapter1 = [
 		meaning: "company",
 	},
 	{
-		kana: "おふぃす",
+		kana: "オフィス",
 		kanji: "オフィス",
 		romaji: "ofisu",
 		meaning: "office",
@@ -298,13 +298,13 @@ const family = [
 	{
 		kana: "しゅじん/おっと",
 		kanji: "主人/夫",
-		romaji: "shujin/otto",
+		romaji: "shujin / otto",
 		meaning: "husband",
 	},
 	{
 		kana: "かない/つま",
 		kanji: "家内/妻",
-		romaji: "kanai/tsuma",
+		romaji: "kanai / tsuma",
 		meaning: "wife",
 	},
 	{
