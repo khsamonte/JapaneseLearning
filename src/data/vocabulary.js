@@ -697,7 +697,7 @@ const chapter2 = [
     kana: "クラス",
     kanji: "クラス",
     romaji: "kurasu",
-    english: "class",
+    english: "class (katakana)",
   },
 ];
 
@@ -1027,7 +1027,7 @@ const chapter4 = [
     kanji: "授業",
     kana: "じゅぎょう",
     romaji: "jugyou",
-    english: "class",
+    english: "class (japanese)",
   },
   {
     kanji: "会議",
