@@ -1194,7 +1194,7 @@ const chapter4 = [
   {
     kanji: "先ず / 初めに",
     kana: "まず / はじめに",
-    romaji: ["mazu" / "hajimeni"],
+    romaji: ["mazu", "hajimeni"],
     english: ["first", "first of all", "before anything else"],
   },
   {
