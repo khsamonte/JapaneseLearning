@@ -129,7 +129,7 @@ const chapter1 = [
   {
     kana: "(お)なまえ",
     kanji: "(お)名前",
-    romaji: "(o)namae",
+    romaji: ["onamae", "namae"],
     english: "name",
   },
   {
