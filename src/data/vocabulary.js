@@ -688,6 +688,12 @@ const chapter2 = [
     english: "chair",
   },
   {
+    kana: "",
+    kanji: "",
+    romaji: "ki",
+    english: "tree",
+  },
+  {
     kana: "クラス",
     kanji: "クラス",
     romaji: "kurasu",
