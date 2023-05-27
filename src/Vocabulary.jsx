@@ -22,9 +22,10 @@ function Vocabulary({
     // "Time",
     // "Date",
     // "Non-specific Time Expressions",
+    "Chapter 5"
   ];
 
-  const languageTypes = ["Kanji", "Kana", "Romaji"];
+  const languageTypes = ["Kanji", "Kana", "English"];
 
   const handleCategorySelection = (category) => {
     setSelectedCategories((prevSelectedCategories) =>

@@ -29,8 +29,8 @@ function VocabularyGame({
 		e.preventDefault();
 		setTotal(total + 1);
 
-		if (Array.isArray(currentWord.meaning)) {
-			if (currentWord.meaning.includes(userAnswer.toLowerCase())) {
+		if (Array.isArray(currentWord.romaji)) {
+			if (currentWord.romaji.includes(userAnswer.toLowerCase())) {
 				setScore(score + 1);
 				setResult("correct");
 				setCorrectAnswer("");
@@ -38,8 +38,8 @@ function VocabularyGame({
 				setResult("wrong");
 
 				let substr = "";
-				currentWord.meaning.forEach((ans, idx) => {
-					if (idx === currentWord.meaning.length - 1) {
+				currentWord.romaji.forEach((ans, idx) => {
+					if (idx === currentWord.romaji.length - 1) {
 						substr += ans;
 					} else {
 						substr += ans + " or ";
@@ -49,13 +49,13 @@ function VocabularyGame({
 				setCorrectAnswer(substr);
 			}
 		} else if (
-			userAnswer.toLowerCase().includes(currentWord.meaning.toLowerCase())
+			userAnswer.toLowerCase().includes(currentWord.romaji.toLowerCase())
 		) {
 			setScore(score + 1);
 			setResult("correct");
 			setCorrectAnswer("");
 		} else {
-			setCorrectAnswer(currentWord.meaning.toLowerCase());
+			setCorrectAnswer(currentWord.romaji.toLowerCase());
 			setResult("wrong");
 		}
 		setUserAnswer("");
@@ -74,7 +74,9 @@ function VocabularyGame({
 	return (
 		<div className="vocabulary-game-page">
 			<div className="game__word-display">
-				{currentWord[selectedLanguageType.toLowerCase()]}
+				{Array.isArray(currentWord[selectedLanguageType.toLowerCase()]) ? 
+          currentWord[selectedLanguageType.toLowerCase()][0] : 
+          currentWord[selectedLanguageType.toLowerCase()]}
 			</div>
 			<div className={`game__score ${result}`}>
 				Score: {score}/{total}
