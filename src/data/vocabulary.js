@@ -183,7 +183,7 @@ const chapter1 = [
   {
     kana: "コンピュータ / パソコン",
     kanji: "コンピュータ / パソコン",
-    romaji: ["kompyu-ta", "pasokon"],
+    romaji: ["kompyuta", "pasokon"],
     english: ["computer", "personal computer"],
   },
   {
@@ -195,7 +195,7 @@ const chapter1 = [
   {
     kana: "ノート",
     kanji: "ノート",
-    romaji: "no-to",
+    romaji: "noto",
     english: "notebook",
   },
   {
@@ -516,7 +516,7 @@ const chapter2 = [
   {
     kana: "モール",
     kanji: "モール",
-    romaji: "mo-ru",
+    romaji: "moru",
     english: "mall",
   },
   {
@@ -546,13 +546,13 @@ const chapter2 = [
   {
     kana: "デパート",
     kanji: "デパート",
-    romaji: "depa-to",
+    romaji: "depato",
     english: "department store",
   },
   {
     kana: "スーパー",
     kanji: "スーパー",
-    romaji: "su-pa-",
+    romaji: "supa",
     english: "supermarket",
   },
   {
@@ -582,7 +582,7 @@ const chapter2 = [
   {
     kana: "アパート",
     kanji: "アパート",
-    romaji: "apa-to",
+    romaji: "apato",
     english: "apartment",
   },
   {
@@ -660,7 +660,7 @@ const chapter2 = [
   {
     kana: "テーブル",
     kanji: "テーブル",
-    romaji: "te-buru",
+    romaji: "teburu",
     english: "table",
   },
   {
@@ -882,7 +882,7 @@ const chapter3 = [
   {
     kana: "ぺージ",
     kanji: "ページ",
-    romaji: "pe-ji",
+    romaji: "peji",
     english: "page",
   },
   {
@@ -930,7 +930,7 @@ const chapter3 = [
   {
     kana: "ボールペン",
     kanji: "ボールペン",
-    romaji: "bo-rupen",
+    romaji: "borupen",
     english: ["ballpoint pen", "ballpen", "ball pen"],
   },
   {
@@ -1086,7 +1086,7 @@ const chapter4 = [
   {
     kanji: "パーティー",
     kana: "パーティー",
-    romaji: "pa-ti-",
+    romaji: "pati",
     english: "party",
   },
   {
@@ -1239,7 +1239,7 @@ const chapter5 = [
   {
     kanji: "",
     kana: "",
-    romaji: "menba-",
+    romaji: "menba",
     english: "member",
   },
   {
@@ -1251,7 +1251,7 @@ const chapter5 = [
   {
     kanji: "",
     kana: "",
-    romaji: ["o-tobai", "baiku"],
+    romaji: ["otobai", "baiku"],
     english: "motorcycle",
   },
   {
@@ -1323,7 +1323,7 @@ const chapter5 = [
   {
     kanji: "",
     kana: "",
-    romaji: "guru-pu",
+    romaji: "gurupu",
     english: "group",
   },
   {
@@ -1341,7 +1341,7 @@ const chapter5 = [
   {
     kanji: "",
     kana: "",
-    romaji: "tore-ningu",
+    romaji: "toreningu",
     english: "training",
   },
   {
