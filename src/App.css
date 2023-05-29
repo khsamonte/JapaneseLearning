@@ -1,128 +1,128 @@
 * {
-	font-family: Helvetica, Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	background-color: #031926; /* Dark Blue */
+  background-color: #031926; /* Dark Blue */
 }
 
 .main-container {
-	color: #fff;
-	text-align: center;
-	max-width: 900px;
-	margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* Home Page */
 .home {
-	color: #ffa500; /* Tangerine */
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
+  color: #ffa500; /* Tangerine */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 h1 {
-	padding: 40px 20px;
+  padding: 40px 20px;
 }
 
 h2 {
-	padding: 30px 20px;
+  padding: 30px 20px;
 }
 
 .home__buttons {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	justify-content: space-between;
-	gap: 20px;
-	max-width: 600px;
-	padding: 20px;
-	width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 600px;
+  padding: 20px;
+  width: 100%;
 }
 
 .home__button {
-	align-items: center;
-	background-color: #ffa500; /* Tangerine */
-	border: none;
-	border-radius: 4px;
-	color: #003366; /* Dark Blue */
-	cursor: pointer;
-	display: flex;
-	font-size: 14px;
-	font-weight: 600;
-	height: 120px;
-	justify-content: center;
-	text-decoration: none;
-	padding: 8px 16px;
-	text-transform: uppercase;
-	transition-duration: 0.4s;
-	width: 100%;
+  align-items: center;
+  background-color: #ffa500; /* Tangerine */
+  border: none;
+  border-radius: 4px;
+  color: #003366; /* Dark Blue */
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  height: 120px;
+  justify-content: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+  width: 100%;
 }
 
 .home__button:disabled {
-	background-color: #ffda97;
-	color: gray;
-	cursor: not-allowed;
+  background-color: #ffda97;
+  color: gray;
+  cursor: not-allowed;
 }
 
 .home__button:hover:not(:disabled) {
-	background-color: #004080; /* Darker Blue */
-	color: #ffa500; /* Tangerine */
+  background-color: #004080; /* Darker Blue */
+  color: #ffa500; /* Tangerine */
 }
 
 .home__button span {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Vocabulary Page */
 
 .vocabulary-page {
-	color: #ffa500; /* Tangerine */
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	min-height: 100vh;
+  color: #ffa500; /* Tangerine */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .vocabulary__back-button {
-	color: #ffa500; /* Tangerine */
-	font-size: 14px;
+  color: #ffa500; /* Tangerine */
+  font-size: 14px;
 }
 
 .vocabulary-buttons {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	justify-content: space-between;
-	gap: 16px;
-	padding: 20px;
-	width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px;
+  width: 100%;
 }
 
 .vocabulary-button {
-	align-items: center;
-	background-color: #ffa500; /* Tangerine */
-	border: none;
-	border-radius: 4px;
-	color: #003366; /* Dark Blue */
-	cursor: pointer;
-	display: flex;
-	font-size: 14px;
-	font-weight: 600;
-	min-height: 70px;
-	justify-content: center;
-	text-decoration: none;
-	padding: 8px 16px;
-	text-transform: uppercase;
-	transition-duration: 0.4s;
-	width: 100%;
+  align-items: center;
+  background-color: #ffa500; /* Tangerine */
+  border: none;
+  border-radius: 4px;
+  color: #003366; /* Dark Blue */
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  min-height: 70px;
+  justify-content: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+  width: 100%;
 }
 
 /* .vocabulary-button:hover {
@@ -131,209 +131,209 @@ h2 {
 } */
 
 .vocabulary-button.button-selected {
-	background-color: #ff7800;
-	color: #003366; /* Dark Blue */
+  background-color: #ff7800;
+  color: #003366; /* Dark Blue */
 }
 
 .vocabulary-button.button-disabled {
-	background-color: #ccc;
-	cursor: not-allowed;
+  background-color: #ccc;
+  cursor: not-allowed;
 }
 
 .script-buttons {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	justify-content: space-between;
-	gap: 16px;
-	max-width: 300px;
-	padding: 20px;
-	width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 16px;
+  /* max-width: 500px; */
+  padding: 20px;
 }
 
 .script-button {
-	align-items: center;
-	background-color: #bebebe;
-	color: #003366; /* Dark Blue */
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-	display: flex;
-	font-size: 14px;
-	font-weight: 600;
-	min-height: 36px;
-	justify-content: center;
-	text-decoration: none;
-	padding: 8px 16px;
-	text-transform: uppercase;
-	transition-duration: 0.4s;
-	width: 100%;
+  align-items: center;
+  background-color: #ffa500;
+  color: #003366; /* Dark Blue */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  min-height: 36px;
+  justify-content: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+  width: 100%;
 }
 
 .script-button.button-selected {
-	background-color: #ffa500; /* Tangerine */
-	color: #003366; /* Dark Blue */
+  background-color: #ff7800; /* Tangerine */
+  color: #003366; /* Dark Blue */
 }
 
-.script-button.button-disabled {
-	background-color: #bebebe;
-	cursor: not-allowed;
+.script-button:disabled {
+  background-color: #bebebe;
+  color: #888;
+  cursor: not-allowed;
 }
 
 .start-game-container,
 .finish-button-container {
-	padding: 20px;
-	width: 100%;
+  padding: 20px;
+  width: 100%;
 }
 
 .start-game-button {
-	align-items: center;
-	background-color: #4fb106;
-	border: none;
-	border-radius: 4px;
-	color: #fff; /* Dark Blue */
-	cursor: pointer;
-	display: flex;
-	font-size: 14px;
-	font-weight: 600;
-	min-height: 70px;
-	justify-content: center;
-	text-decoration: none;
-	padding: 8px 16px;
-	text-transform: uppercase;
-	transition-duration: 0.4s;
-	width: 100%;
+  align-items: center;
+  background-color: #4fb106;
+  border: none;
+  border-radius: 4px;
+  color: #fff; /* Dark Blue */
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  min-height: 70px;
+  justify-content: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+  width: 100%;
 }
 
 .start-game-button.button-disabled {
-	background-color: #bebebe;
-	color: #fff;
-	cursor: not-allowed;
+  background-color: #bebebe;
+  color: #fff;
+  cursor: not-allowed;
 }
 
 /* Vocabulary Game Page */
 
 .vocabulary-game-page {
-	color: #ffa500; /* Tangerine */
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
-	min-height: 100vh;
-	padding-top: 60px;
+  color: #ffa500; /* Tangerine */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding-top: 60px;
 }
 
 /* Game Section */
 
 .game {
-	background-color: #003366; /* Dark Blue */
-	color: #ffa500; /* Tangerine */
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-	padding: 20px;
+  background-color: #003366; /* Dark Blue */
+  color: #ffa500; /* Tangerine */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
 }
 
 .game__score {
-	margin-bottom: 20px;
-	font-size: 24px;
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 
 .game__score.correct {
-	color: lime;
+  color: lime;
 }
 .game__score.wrong {
-	color: #fd2f2f;
+  color: #fd2f2f;
 }
 
 .game__correct_answer {
-	margin-bottom: 20px;
-	font-size: 18px;
+  margin-bottom: 20px;
+  font-size: 18px;
 }
 .game__correct_answer.correct {
-	color: lime;
+  color: lime;
 }
 .game__correct_answer.wrong {
-	color: #fd2f2f;
+  color: #fd2f2f;
 }
 
 .game__word-display {
-	background-color: #ffa500; /* Tangerine */
-	color: #003366; /* Dark Blue */
-	font-size: 48px;
-	margin: 20px 0;
-	padding: 40px;
-	min-width: 300px;
-	font-weight: bold;
-	text-transform: uppercase;
-	border-radius: 8px;
+  background-color: #ffa500; /* Tangerine */
+  color: #003366; /* Dark Blue */
+  font-size: 48px;
+  margin: 20px 0;
+  padding: 40px;
+  min-width: 300px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
 }
 
 .game__input-form {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .game__input-form input {
-	border: none;
-	border-radius: 4px 0 0 4px;
-	padding: 10px;
-	font-size: 16px;
-	height: 40px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  padding: 10px;
+  font-size: 16px;
+  height: 40px;
 }
 
 .game__input-form button {
-	background-color: #ffa500; /* Tangerine */
-	border: none;
-	border-radius: 0 4px 4px 0;
-	color: #003366; /* Dark Blue */
-	cursor: pointer;
-	font-size: 14px;
-	height: 40px;
-	font-weight: 600;
-	padding: 12px 20px;
-	transition-duration: 0.4s;
-	text-align: center;
-	text-transform: uppercase;
+  background-color: #ffa500; /* Tangerine */
+  border: none;
+  border-radius: 0 4px 4px 0;
+  color: #003366; /* Dark Blue */
+  cursor: pointer;
+  font-size: 14px;
+  height: 40px;
+  font-weight: 600;
+  padding: 12px 20px;
+  transition-duration: 0.4s;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .game__input-form button:hover {
-	background-color: #004080; /* Darker Blue */
-	color: #ffa500; /* Tangerine */
+  background-color: #004080; /* Darker Blue */
+  color: #ffa500; /* Tangerine */
 }
 
 .game__finish-button {
-	align-items: center;
-	background-color: #4fb106;
-	border: none;
-	border-radius: 4px;
-	color: #fff; /* Dark Blue */
-	cursor: pointer;
-	display: flex;
-	font-size: 14px;
-	font-weight: 600;
-	max-width: 200px;
-	margin: 0 auto;
-	min-height: 40px;
-	justify-content: center;
-	text-decoration: none;
-	padding: 8px 16px;
-	text-transform: uppercase;
-	transition-duration: 0.4s;
-	width: 100%;
+  align-items: center;
+  background-color: #4fb106;
+  border: none;
+  border-radius: 4px;
+  color: #fff; /* Dark Blue */
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  max-width: 200px;
+  margin: 0 auto;
+  min-height: 40px;
+  justify-content: center;
+  text-decoration: none;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+  width: 100%;
 }
 
 @media (max-width: 640px) {
-	.vocabulary-buttons {
-		grid-template-columns: repeat(2, 1fr);
-	}
+  .vocabulary-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-	.vocabulary-button {
-		min-height: 40px;
-	}
+  .vocabulary-button {
+    min-height: 40px;
+  }
 
-	.game__word-display {
-		font-size: 36px;
-		padding: 20px 40px;
-	}
+  .game__word-display {
+    font-size: 36px;
+    padding: 20px 40px;
+  }
 }

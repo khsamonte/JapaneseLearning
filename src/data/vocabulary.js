@@ -1,4 +1,5 @@
 import { numbers } from "./numbers";
+import { dates, daysOfTheWeek } from "./dates";
 
 const chapter1 = [
   {
@@ -76,19 +77,19 @@ const chapter1 = [
     kana: "にほんじん",
     kanji: "日本人",
     romaji: "nihonjin",
-    english: "Japanese",
+    english: "Japanese (Person)",
   },
   {
     kana: "あめりかじん",
     kanji: "アメリカ人",
     romaji: "amerikajin",
-    english: "American",
+    english: "American (Person)",
   },
   {
     kana: "フィリピンじん",
     kanji: "フィリピン人",
     romaji: "firipinjin",
-    english: "Filipino",
+    english: "Filipino (Person)",
   },
   {
     kana: "みんな / みなさん",
@@ -712,7 +713,7 @@ const locatives = [
     kana: "した",
     kanji: "下",
     romaji: "shita",
-    english: "under"
+    english: "under",
   },
   {
     kana: "まえ",
@@ -760,29 +761,39 @@ const locatives = [
     kana: "ちかく",
     kanji: "近く",
     romaji: "chikaku",
-    english: "near",
+    english: ["near (same area / vicinity)", "near", "close"],
   },
   {
-    kana: "となり",
     kanji: "隣",
+    kana: "となり",
     romaji: "tonari",
-    english: "adjacent",
+    english: [
+      "close promixity (two objects touching side-by-side)",
+      "next to",
+      "beside",
+      "adjacent",
+    ],
   },
   {
-    kana: "そば",
     kanji: "側",
+    kana: "そば",
     romaji: "soba",
-    english: "close",
+    english: [
+      "beside (same area) / close relationship between people",
+      "beside",
+      "close",
+      "near",
+    ],
   },
   {
-    kana: "よこ",
     kanji: "横",
+    kana: "よこ",
     romaji: "yoko",
-    english: "beside",
+    english: ["beside (lateral placement)", "horizontal", "sideways", "beside"],
   },
   {
-    kana: "むこう",
     kanji: "向こう",
+    kana: "むこう",
     romaji: "mukou",
     english: "opposite",
   },
@@ -1221,7 +1232,7 @@ const chapter4 = [
     romaji: ["yoru", "ban"],
     english: "night / evening",
   },
-]
+];
 
 const chapter5 = [
   {
@@ -1259,6 +1270,12 @@ const chapter5 = [
     kana: "",
     romaji: ["otobai", "baiku"],
     english: "motorcycle",
+  },
+  {
+    kanji: "",
+    kana: "",
+    romaji: "densha",
+    english: ["bicycle", "bike"],
   },
   {
     kanji: "",
@@ -1380,7 +1397,9 @@ const chapter5 = [
     romaji: "bunpou",
     english: "grammar",
   },
-]
+];
+
+const spanOfTime = [];
 
 export const vocabularies = {
   "Chapter 1": chapter1,
@@ -1394,8 +1413,10 @@ export const vocabularies = {
   InterrogativesForCounters: interrogativesForCounters,
   "Chapter 4": chapter4,
   Time: [],
-  Date: [],
+  Dates: dates,
+  "Days Of The Week": daysOfTheWeek,
   "Non-specific Time Expressions": [],
-  "Chapter 5": chapter5
+  "Chapter 5": chapter5,
+  "Span Of Time": spanOfTime,
   // More categories and vocabularies here...
 };

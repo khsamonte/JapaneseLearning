@@ -1,16 +1,16 @@
 // import { templateSettings } from "lodash";
 
 const numbers = [
-  { kana: "いち", kanji: "一", romaji: "ichi", meaning: "1" },
-  { kana: "に", kanji: "二", romaji: "ni", meaning: "2" },
-  { kana: "さん", kanji: "三", romaji: "san", meaning: "3" },
-  { kana: "よん", kanji: "四", romaji: "yon", meaning: "4" },
-  { kana: "ご", kanji: "五", romaji: "go", meaning: "5" },
-  { kana: "ろく", kanji: "六", romaji: "roku", meaning: "6" },
-  { kana: "なな", kanji: "七", romaji: "nana", meaning: "7" },
-  { kana: "はち", kanji: "八", romaji: "hachi", meaning: "8" },
-  { kana: "きゅう", kanji: "九", romaji: "kyū", meaning: "9" },
-  { kana: "じゅう", kanji: "十", romaji: "jū", meaning: "10" },
+  { kana: "いち", kanji: "一", romaji: "ichi", english: "1" },
+  { kana: "に", kanji: "二", romaji: "ni", english: "2" },
+  { kana: "さん", kanji: "三", romaji: "san", english: "3" },
+  { kana: "よん", kanji: "四", romaji: "yon", english: "4" },
+  { kana: "ご", kanji: "五", romaji: "go", english: "5" },
+  { kana: "ろく", kanji: "六", romaji: "roku", english: "6" },
+  { kana: "なな", kanji: "七", romaji: "nana", english: "7" },
+  { kana: "はち", kanji: "八", romaji: "hachi", english: "8" },
+  { kana: "きゅう", kanji: "九", romaji: "kyuu", english: "9" },
+  { kana: "じゅう", kanji: "十", romaji: "juu", english: "10" },
 ];
 
 // TENS
@@ -21,7 +21,7 @@ for (let i = 0; i < 9; i++) {
     kana: numbers[9]["kana"] + numbers[i]["kana"],
     kanji: numbers[9]["kanji"] + numbers[i]["kanji"],
     romaji: numbers[9]["romaji"] + "-" + numbers[i]["romaji"],
-    meaning: numbers[0]["meaning"] + numbers[i]["meaning"],
+    english: numbers[0]["english"] + numbers[i]["english"],
   });
 }
 
@@ -30,41 +30,39 @@ for (let i = 0; i < 9; i++) {
 
 // 20-99
 
-// TRY
-
 const doubleDigits = [];
 numbers.forEach((tens, tensIndex) => {
   numbers.forEach((ones) => {
     // Ignore 101+
-    if (tens.meaning === "10") {
+    if (tens.english === "10") {
       return;
     }
     // Ignore 100
-    if (numbers[tensIndex + 1].meaning === "10" && ones.meaning === "10") {
+    if (numbers[tensIndex + 1].english === "10" && ones.english === "10") {
       return;
     }
 
     let kana = "";
     let kanji = "";
     let romaji = "";
-    let meaning = "";
+    let english = "";
 
-    if (ones.meaning === "10") {
+    if (ones.english === "10") {
       kanji = numbers[tensIndex + 1].kanji + numbers[9].kanji;
       kana = numbers[tensIndex + 1].kana + numbers[9].kana;
-      romaji = numbers[tensIndex + 1].romaji + "-jū";
-      meaning = numbers[tensIndex + 1].meaning + "0";
+      romaji = numbers[tensIndex + 1].romaji + "juu";
+      english = numbers[tensIndex + 1].english + "0";
     } else {
-      if (tens.meaning === "1") {
+      if (tens.english === "1") {
         kanji = numbers[9].kanji + ones.kanji;
         kana = numbers[9].kana + ones.kana;
-        romaji = numbers[9].romaji + "-" + ones.romaji;
-        meaning = numbers[0].meaning + ones.meaning;
+        romaji = numbers[9].romaji + "" + ones.romaji;
+        english = numbers[0].english + ones.english;
       } else {
         kanji = tens.kanji + numbers[9].kanji + ones.kanji;
         kana = tens.kana + numbers[9].kana + ones.kana;
-        romaji = tens.romaji + "-" + numbers[9].romaji + "-" + ones.romaji;
-        meaning = tens.meaning + ones.meaning;
+        romaji = tens.romaji + "" + numbers[9].romaji + "" + ones.romaji;
+        english = tens.english + ones.english;
       }
     }
 
@@ -72,10 +70,27 @@ numbers.forEach((tens, tensIndex) => {
       kanji: kanji,
       kana: kana,
       romaji: romaji,
-      meaning: meaning,
+      english: english,
     });
   });
 });
 
 numbers.push(...doubleDigits);
+
+const spanOfTimeUnits = [
+  { kanji: "分", kana: "ふん", romaji: "fun", english: "minutes" },
+  {
+    kanji: "時間",
+    kana: "じかん",
+    romaji: "jikan",
+    english: ["hour", "hours"],
+  },
+  { kanji: "", kana: "", romaji: "", english: ["day", "days"] },
+  { kanji: "", kana: "", romaji: "", english: "weeks" },
+  { kanji: "", kana: "", romaji: "", english: "months" },
+  { kanji: "", kana: "", romaji: "", english: "years" },
+];
+
+console.log(numbers);
+
 export { numbers };
