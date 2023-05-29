@@ -1,5 +1,6 @@
 import { numbers } from "./numbers";
 
+// Sunday to Saturday translations
 const daysOfTheWeek = [
   {
     kana: "げつようび",
@@ -35,7 +36,7 @@ const daysOfTheWeek = [
   },
 ];
 
-// Months
+// January to December translations
 const months = [
   {
     kanji: "一月",
@@ -123,7 +124,8 @@ const months = [
   },
 ];
 
-const days = [
+// Days 1 - 10 translations
+const daysCounters = [
   { kanji: "", kana: "", romaji: "tsuitachi", english: "1" },
   { kanji: "", kana: "", romaji: "futsuka", english: "2" },
   { kanji: "", kana: "", romaji: "mikka", english: "3" },
@@ -136,6 +138,7 @@ const days = [
   { kanji: "", kana: "", romaji: "tooka", english: "10" },
 ];
 
+// Days 11 to 31 translations
 function addRemainingDays() {
   let remainingDays = [];
 
@@ -150,7 +153,6 @@ function addRemainingDays() {
     } else {
       romaji = numbers[i - 1].romaji + "nichi";
     }
-
     romaji = romaji.replace("nana", "shichi");
     romaji = romaji.replace("kyuu", "ku");
 
@@ -161,12 +163,11 @@ function addRemainingDays() {
       english: i + "",
     });
   }
-
   return remainingDays;
 }
-days.push(...addRemainingDays());
+daysCounters.push(...addRemainingDays());
 
-// MONTH + DAY
+// Combine the months (Jan to Dec) and days (1 to 31)
 const dates = [];
 function createDates() {
   const arr = [];
@@ -176,8 +177,8 @@ function createDates() {
       arr.push({
         kanji: "",
         kana: "",
-        romaji: month.romaji + " " + days[i].romaji,
-        english: month.english + " " + days[i].english,
+        romaji: month.romaji + " " + daysCounters[i].romaji,
+        english: month.english + " " + daysCounters[i].english,
       });
     }
   });
@@ -186,4 +187,4 @@ function createDates() {
 }
 dates.push(...createDates());
 
-export { daysOfTheWeek, dates };
+export { daysOfTheWeek, dates, daysCounters };

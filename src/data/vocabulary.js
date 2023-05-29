@@ -1,4 +1,4 @@
-import { numbers } from "./numbers";
+import { numbers, spanOfTime } from "./numbers";
 import { dates, daysOfTheWeek } from "./dates";
 
 const chapter1 = [
@@ -1398,8 +1398,6 @@ const chapter5 = [
     english: "grammar",
   },
 ];
-
-const spanOfTime = [];
 
 export const vocabularies = {
   "Chapter 1": chapter1,

@@ -80,10 +80,6 @@ function VocabularyGame({
 
   // Renders the word to display in the flash card
   const renderWordDisplayed = () => {
-    console.log(
-      "Render word displayed.",
-      currentWord[selectedQuestionCharacter.toLowerCase()]
-    );
     /**
      * Sometimes, the entry for a specific character is an array, so in that
      * case, the first item inside that array will be chosen.

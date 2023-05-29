@@ -78,19 +78,82 @@ numbers.forEach((tens, tensIndex) => {
 numbers.push(...doubleDigits);
 
 const spanOfTimeUnits = [
-  { kanji: "分", kana: "ふん", romaji: "fun", english: "minutes" },
+  { kanji: "分", kana: "ふん", romaji: "fun", english: "minute" },
   {
     kanji: "時間",
     kana: "じかん",
     romaji: "jikan",
-    english: ["hour", "hours"],
+    english: "hour",
   },
-  { kanji: "", kana: "", romaji: "", english: ["day", "days"] },
-  { kanji: "", kana: "", romaji: "", english: "weeks" },
-  { kanji: "", kana: "", romaji: "", english: "months" },
-  { kanji: "", kana: "", romaji: "", english: "years" },
+  { kanji: "", kana: "", romaji: "nichi", english: "day" },
+  { kanji: "週", kana: "しゅう", romaji: "shuu", english: "week" },
+  { kanji: "カ月", kana: "かげつ", romaji: "kagetsu", english: "month" },
+  { kanji: "年", kana: "ねん", romaji: "nen", english: "year" },
 ];
 
-console.log(numbers);
+function addNumbersToSpanOfTime() {
+  const arr = [];
 
-export { numbers };
+  function romajiConverter(unit, i) {
+    if (unit.english === "minute") {
+      if (i === 1) {
+        return "ippun";
+      } else if (i === 3 || i === 4) {
+        return `${numbers[i - 1].romaji}pun`;
+      } else if (i === 6) {
+        return "roppun";
+      } else if (i === 8) {
+        return "happun";
+      } else if (i === 10) {
+        return "juppun";
+      }
+    } else if (unit.english === "hour") {
+      if (i === 4) {
+        return "yojikan";
+      } else if (i === 7) {
+        return ["nanajikan", "shichijikan"];
+      } else if (i === 9) {
+        return "kujikan";
+      }
+    } else if (unit.english === "week") {
+      if (i === 1) {
+        return ["isshuu", "isshuukan"];
+      } else if (i === 8) {
+        return ["hasshuu", "hasshuukan"];
+      } else {
+        return [
+          `${numbers[i - 1].romaji}${unit.romaji}`,
+          `${numbers[i - 1].romaji}${unit.romaji}kan`,
+        ];
+      }
+    }
+
+    return `${numbers[i - 1].romaji}${unit.romaji}`;
+  }
+
+  function pluralizeEN(unit, i) {
+    if (i === 1) {
+      return `${i} ${unit}`;
+    }
+    return `${i} ${unit}s`;
+  }
+
+  spanOfTimeUnits.forEach((unit) => {
+    for (let i = 1; i <= 10; i++) {
+      arr.push({
+        kanji: "",
+        kana: "",
+        romaji: romajiConverter(unit, i),
+        english: pluralizeEN(unit.english, i),
+      });
+    }
+  });
+
+  return arr;
+}
+
+const spanOfTime = addNumbersToSpanOfTime();
+
+console.log(spanOfTime);
+
+export { numbers, spanOfTime };

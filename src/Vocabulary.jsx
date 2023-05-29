@@ -26,7 +26,7 @@ function Vocabulary({
     // "Time",
     // "Non-specific Time Expressions",
     "Chapter 5",
-    // "Span Of Time",
+    "Span Of Time",
   ];
 
   const cardCharacters = ["kanji", "kana", "romaji", "english"];
@@ -68,7 +68,7 @@ function Vocabulary({
                 ? "button-selected"
                 : ""
             }`}
-            disabled={selectedAnswerCharacter === cardCharacter}
+            // disabled={selectedAnswerCharacter === cardCharacter}
             onClick={() => setSelectedQuestionCharacter(cardCharacter)}
           >
             {cardCharacter}
@@ -83,7 +83,7 @@ function Vocabulary({
             className={`script-button ${
               selectedAnswerCharacter === cardCharacter ? "button-selected" : ""
             }`}
-            disabled={selectedQuestionCharacter === cardCharacter}
+            // disabled={selectedQuestionCharacter === cardCharacter}
             onClick={() => setSelectedAnswerCharacter(cardCharacter)}
           >
             {cardCharacter}
