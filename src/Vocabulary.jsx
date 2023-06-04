@@ -6,8 +6,10 @@ localStorage.setItem("isAuthenticated", false);
 function Vocabulary({
   selectedCategories,
   setSelectedCategories,
-  selectedLanguageType,
-  setSelectedLanguageType,
+  selectedQuestionCharacter,
+  setSelectedQuestionCharacter,
+  selectedAnswerCharacter,
+  setSelectedAnswerCharacter,
 }) {
   const categories = [
     "Chapter 1",
@@ -17,15 +19,17 @@ function Vocabulary({
     "Locatives",
     "Chapter 3",
     "Numbers (1-99)",
-    // "Counters",
+    // "Counters",""
     "Chapter 4",
+    "Dates",
+    "Days Of The Week",
     // "Time",
-    // "Date",
     // "Non-specific Time Expressions",
-    "Chapter 5"
+    "Chapter 5",
+    "Span Of Time",
   ];
 
-  const languageTypes = ["Kanji", "Kana", "English"];
+  const cardCharacters = ["kanji", "kana", "romaji", "english"];
 
   const handleCategorySelection = (category) => {
     setSelectedCategories((prevSelectedCategories) =>
@@ -54,17 +58,35 @@ function Vocabulary({
           </button>
         ))}
       </div>
-      <h3>Select Language Type</h3>
+      <h3>Flash Card:</h3>
       <div className="script-buttons">
-        {languageTypes.map((type, index) => (
+        {cardCharacters.map((cardCharacter, index) => (
           <button
             key={index}
             className={`script-button ${
-              selectedLanguageType === type ? "button-selected" : ""
+              selectedQuestionCharacter === cardCharacter
+                ? "button-selected"
+                : ""
             }`}
-            onClick={() => setSelectedLanguageType(type)}
+            // disabled={selectedAnswerCharacter === cardCharacter}
+            onClick={() => setSelectedQuestionCharacter(cardCharacter)}
           >
-            {type}
+            {cardCharacter}
+          </button>
+        ))}
+      </div>
+      <h3>Answer in:</h3>
+      <div className="script-buttons">
+        {cardCharacters.map((cardCharacter, index) => (
+          <button
+            key={index}
+            className={`script-button ${
+              selectedAnswerCharacter === cardCharacter ? "button-selected" : ""
+            }`}
+            // disabled={selectedQuestionCharacter === cardCharacter}
+            onClick={() => setSelectedAnswerCharacter(cardCharacter)}
+          >
+            {cardCharacter}
           </button>
         ))}
       </div>
