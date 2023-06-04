@@ -1382,6 +1382,150 @@ const chapter5 = [
   },
 ]
 
+const chapter6 = [
+  {
+    kanji: "場所",
+    kana: "ところ / ばしょ",
+    romaji: ["tokoro", "basho"],
+    english: "place"
+  },
+  {
+    kanji: "建物",
+    kana: "たてもの",
+    romaji: "tatemono",
+    english: "building"
+  },
+  {
+    kanji: "公園",
+    kana: "こうえん",
+    romaji: "kouen",
+    english: "park"
+  },
+  {
+    kanji: "道",
+    kana: "みち",
+    romaji: "michi",
+    english: "road"
+  },
+  {
+    kanji: "空港",
+    kana: "くうこう",
+    romaji: "kuukou",
+    english: "airport"
+  },
+  {
+    kanji: "港",
+    kana: "みなと",
+    romaji: "minato",
+    english: ["harbor", "seaport"]
+  },
+  {
+    kanji: "店",
+    kana: "みせ",
+    romaji: "mise",
+    english: ["shop", "store"]
+  },
+  {
+    kanji: "薬屋",
+    kana: "くすりや",
+    romaji: "kusuriya",
+    english: ["drugstore", "pharmacy"]
+  },
+  {
+    kana: "トイレ",
+    kanji: "トイレ",
+    romaji: "toire",
+    english: "toilet"
+  },
+  {
+    kana: "だいどころ",
+    kanji: "台所",
+    romaji: "daidokoro",
+    english: "kitchen"
+  },
+  {
+    kana: "ベッド",
+    kanji: "ベッド",
+    romaji: "beddo",
+    english: "bed"
+  },
+  {
+    kana: "べんきょう",
+    kanji: "勉強",
+    romaji: "benkyou",
+    english: "study"
+  },
+  {
+    kana: "れんしゅう",
+    kanji: "練習",
+    romaji: "renshuu",
+    english: "practice"
+  },
+  {
+    kana: "こたえ",
+    kanji: "答え",
+    romaji: "kotae",
+    english: "answer"
+  },
+  {
+    kana: "かんじ",
+    kanji: "漢字",
+    romaji: "kanji",
+    english: "kanji characters"
+  },
+  {
+    kana: "じ",
+    kanji: "時",
+    romaji: "ji",
+    english: "hour/time"
+  },
+  {
+    kana: "めも",
+    kanji: "メモ",
+    romaji: "memo",
+    english: "memo/note"
+  },
+  {
+    kana: "しゃしん",
+    kanji: "写真",
+    romaji: "shashin",
+    english: "photograph"
+  },
+  {
+    kana: "ちょっと",
+    kanji: "ちょっと",
+    romaji: "chotto",
+    english: "a little/bit"
+  },
+  {
+    kana: "とても",
+    kanji: "とても",
+    romaji: "totemo",
+    english: "very"
+  },
+  {
+    kana: "たいへん",
+    kanji: "大変",
+    romaji: "taihen",
+    english: "difficult/hard"
+  },
+  {
+    kana: "あまい",
+    kanji: "甘い",
+    romaji: "amai",
+    english: "sweet"
+  },
+  {
+    kana: "りょうり",
+    kanji: "料理",
+    romaji: "ryouri",
+    english: "cooking/cuisine"
+  }
+];
+
+console.log(chapter6);
+
+
 export const vocabularies = {
   "Chapter 1": chapter1,
   Family: family,
@@ -1396,6 +1540,7 @@ export const vocabularies = {
   Time: [],
   Date: [],
   "Non-specific Time Expressions": [],
-  "Chapter 5": chapter5
+  "Chapter 5": chapter5,
+  "Chapter 6": chapter6
   // More categories and vocabularies here...
 };
