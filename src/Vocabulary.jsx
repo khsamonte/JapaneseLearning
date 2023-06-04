@@ -27,6 +27,7 @@ function Vocabulary({
     // "Non-specific Time Expressions",
     "Chapter 5",
     "Span Of Time",
+    "Chapter 6",
   ];
 
   const cardCharacters = ["kanji", "kana", "romaji", "english"];
