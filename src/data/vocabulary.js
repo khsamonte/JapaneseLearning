@@ -2037,9 +2037,9 @@ const adjectives1 = [
 		english: ["hot (things)", "hot"],
 	},
 	{
-		kanji: "寒い",
-		kana: "さむい",
-		romaji: "samui",
+		kanji: "冷たい",
+		kana: "つめたい",
+		romaji: "tsumetai",
 		english: ["cold (things)", "cold"],
 	},
 	{
