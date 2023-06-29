@@ -1547,7 +1547,7 @@ const chapter5 = [
   {
     kanji: "",
     kana: "",
-    romaji: "densha",
+    romaji: "jitensha",
     english: ["bicycle", "bike"],
   },
   {
