@@ -68,7 +68,7 @@ function VocabularyGame({
     setUserAnswer("");
 
     // If there are items remaining
-    if (wordList.length > 0) {
+    if (wordList.length > 1) {
       setWordList(wordList.slice(1));
       setCurrentWord(wordList[1]);
     } else {
