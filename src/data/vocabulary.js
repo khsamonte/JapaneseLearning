@@ -2535,7 +2535,7 @@ const chapter9 = [
     kanji: "富士山",
     kana: "ふじさん",
     romaji: "fujisan",
-    english: ["Mount Fuji", "Mt. Fuji", "Mt Fuji"],
+    english: ["mount fuji", "mt. fuji", "mt fuji"],
   },
   {
     kanji: "川",
@@ -2654,7 +2654,7 @@ const chapter9 = [
     kanji: "帰ります",
     kana: "かえります",
     romaji: "kaerimasu",
-    english: ["return/go home [verb]", "return", "go home"],
+    english: ["return/go home [verb]", "return home", "return", "go home"],
   },
   {
     kanji: "戻ります",
