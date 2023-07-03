@@ -2612,7 +2612,7 @@ const chapter9 = [
     kanji: "温泉",
     kana: "おんせん",
     romaji: "onsen",
-    english: "hot spring",
+    english: ["hot spring", "hot springs"],
   },
   {
     kanji: "旅館",
