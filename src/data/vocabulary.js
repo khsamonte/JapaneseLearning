@@ -1835,13 +1835,13 @@ const adjectives1 = [
   {
     kanji: "色々",
     kana: "いろいろ",
-    romaji: "iroiro",
+    romaji: "iroirona",
     english: "various",
   },
   {
     kanji: "立派",
     kana: "りっぱ",
-    romaji: "rippa",
+    romaji: "rippana",
     english: "splendid",
   },
   {
@@ -1889,7 +1889,7 @@ const adjectives1 = [
   {
     kanji: "簡単",
     kana: "かんたん",
-    romaji: "kantan",
+    romaji: "kantanna",
     english: ["easy (as in a task)", "easy"],
   },
   {
@@ -1985,13 +1985,13 @@ const adjectives1 = [
   {
     kanji: "静か",
     kana: "しずか",
-    romaji: "shizuka",
+    romaji: "shizukana",
     english: "silent",
   },
   {
     kanji: "賑やか",
     kana: "にぎやか",
-    romaji: "nigiyaka",
+    romaji: "nigiyakana",
     english: "lively",
   },
   {
@@ -2009,13 +2009,13 @@ const adjectives1 = [
   {
     kanji: "便利",
     kana: "べんり",
-    romaji: "benri",
+    romaji: "benrina",
     english: "convenient",
   },
   {
     kanji: "不便",
     kana: "ふべん",
-    romaji: "fuben",
+    romaji: "fubenna",
     english: "inconvenient",
   },
   {
