@@ -1995,8 +1995,8 @@ const adjectives1 = [
     english: "lively",
   },
   {
-    kanji: "高い",
-    kana: "たかい",
+    kanji: "高い (2)",
+    kana: "たかい (2)",
     romaji: "takai",
     english: "expensive",
   },
@@ -2005,6 +2005,30 @@ const adjectives1 = [
     kana: "やすい",
     romaji: "yasui",
     english: "cheap",
+  },
+  {
+    kanji: "高い (1)",
+    kana: "たかい (1)",
+    romaji: "takai",
+    english: ["high/tall", "high", "tall"],
+  },
+  {
+    kanji: "低い",
+    kana: "ひくい",
+    romaji: "hikui",
+    english: "low",
+  },
+  {
+    kanji: "暇",
+    kana: "ひま",
+    romaji: "hima",
+    english: "free",
+  },
+  {
+    kanji: "忙しい",
+    kana: "いそがしい",
+    romaji: "isogashii",
+    english: "busy",
   },
   {
     kanji: "便利",
