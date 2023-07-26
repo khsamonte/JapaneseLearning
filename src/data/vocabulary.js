@@ -3363,5 +3363,6 @@ export const vocabularies = {
   "Chapter 9": chapter9,
   "Chapter 10": chapter10,
   "Chapter 11": chapter11,
+  "Chapter 12": chapter12,
   // More categories and vocabularies here...
 };
