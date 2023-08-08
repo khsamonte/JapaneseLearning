@@ -35,6 +35,7 @@ function Vocabulary({
     "Chapter 9",
     "Chapter 10",
     "Chapter 11",
+    "Chapter 12",
   ];
 
   const cardCharacters = ["kanji", "kana", "romaji", "english"];
