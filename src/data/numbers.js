@@ -154,6 +154,4 @@ function addNumbersToSpanOfTime() {
 
 const spanOfTime = addNumbersToSpanOfTime();
 
-console.log(spanOfTime);
-
 export { numbers, spanOfTime };
