@@ -3968,6 +3968,165 @@ const chapter15 = [
 	},
 ];
 
+const chapter19 = [
+	{
+		kanji: "雨",
+		kana: "あめ",
+		romaji: "ame",
+		english: "rain",
+	},
+	{
+		kanji: "風",
+		kana: "かぜ",
+		romaji: "kaze",
+		english: "wind",
+	},
+	{
+		kanji: "雪",
+		kana: "ゆき",
+		romaji: "yuki",
+		english: "snow",
+	},
+	{
+		kanji: "お宅",
+		kana: "おたく",
+		romaji: "otaku",
+		english: "your house",
+	},
+	{
+		kanji: "廊下",
+		kana: "ろうか",
+		romaji: "rouka",
+		english: "corridor",
+	},
+	{
+		kanji: "角",
+		kana: "かど",
+		romaji: "kado",
+		english: ["corner/edge", "corner", "edge"],
+	},
+	{
+		kanji: "道路",
+		kana: "どうろ",
+		romaji: "douro",
+		english: ["road/highway", "road", "highway"],
+	},
+	{
+		kanji: "プール",
+		kana: "プール",
+		romaji: "pu-ru",
+		english: "pool",
+	},
+	{
+		kanji: "乗り場",
+		kana: "のりば",
+		romaji: "noriba",
+		english: "bus stop",
+	},
+	{
+		kanji: "交差点",
+		kana: "こうさてん",
+		romaji: "kousaten",
+		english: "intersection",
+	},
+	{
+		kanji: "交番",
+		kana: "こうばん",
+		romaji: "kouban",
+		english: "police box",
+	},
+	{
+		kanji: "助ける",
+		kana: "たすける",
+		romaji: "tasukeru",
+		english: "to help",
+	},
+	{
+		kanji: "急ぐ",
+		kana: "いそぐ",
+		romaji: "isogu",
+		english: "to hurry",
+	},
+	{
+		kanji: "言う",
+		kana: "いう",
+		romaji: "iu",
+		english: "to say",
+	},
+	{
+		kanji: "思う",
+		kana: "おもう",
+		romaji: "omou",
+		english: "to think",
+	},
+	{
+		kanji: "合格",
+		kana: "ごうかく",
+		romaji: "goukaku",
+		english: ["passing (an exam)", "pass"],
+	},
+	{
+		kanji: "開く",
+		kana: "ひらく",
+		romaji: "hiraku",
+		english: "to open (an event)",
+	},
+	{
+		kanji: "いただく",
+		kana: "いただく",
+		romaji: "itadaku",
+		english: "to receive",
+	},
+	{
+		kanji: "曲がる",
+		kana: "まがる",
+		romaji: "magaru",
+		english: "to turn",
+	},
+	{
+		kanji: "若い",
+		kana: "わかい",
+		romaji: "wakai",
+		english: "young",
+	},
+	{
+		kanji: "嫌",
+		kana: "いや",
+		romaji: "iya",
+		english: "disagreeable",
+	},
+	{
+		kanji: "だめ",
+		kana: "だめ",
+		romaji: "dame",
+		english: "no good",
+	},
+	{
+		kanji: "同じ",
+		kana: "おなじ",
+		romaji: "onaji",
+		english: "same",
+	},
+	{
+		kanji: "度",
+		kana: "ど",
+		romaji: "do",
+		english: "degrees",
+	},
+	{
+		kanji: "お土産",
+		kana: "おみやげ",
+		romaji: "omiyage",
+		english: "souvenir",
+	},
+	{
+		kanji: "真ん中",
+		kana: "まんなか",
+		romaji: "mannaka",
+		english: "center",
+	},
+];
+
 // Template for Verbs
 // {
 //   kanji: [" ()", "", ""],
@@ -4288,5 +4447,6 @@ export const vocabularies = {
 	"Chapter 14": chapter14,
 	"Chapter 15": chapter15,
 	Verbs: verbs,
+	"Chapter 19": chapter19,
 	// More categories and vocabularies here...
 };
