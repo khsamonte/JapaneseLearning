@@ -39,6 +39,8 @@ function Vocabulary({
 		"Chapter 13",
 		"Chapter 14",
 		"Chapter 15",
+		"Chapter 16",
+		"Chapter 17",
 		"Chapter 19",
 	];
 
