@@ -1,6 +1,6 @@
 import { numbers, spanOfTime } from "./numbers";
 import { dates, daysOfTheWeek } from "./dates";
-import { kanji1, kanji2, kanji3, kanji4, kanji5, kanji6 } from "./vocab-kanji";
+// import { kanji1, kanji2, kanji3, kanji4, kanji5, kanji6 } from "./vocab-kanji";
 
 const chapter1 = [
 	{
@@ -4914,14 +4914,6 @@ const chapter20 = [
 	},
 ];
 
-// Template for Verbs
-// {
-//   kanji: [" ()", "", ""],
-//   kana: [" ()", "", ""],
-//   romaji: ["", "", ""],
-//   english: ["", ""],
-// },
-
 const verbs = [
 	// Chapter 12
 	{
@@ -5203,6 +5195,320 @@ const verbs = [
 		english: "graduate",
 	},
 ];
+const umeGoi3 = [
+	{
+		kanji: "宝くじ",
+		kana: "たからくじ",
+		romaji: "takarakuji",
+		english: "lottery",
+	},
+	{
+		kanji: "送別会",
+		kana: "そうべつかい",
+		romaji: "soubetsukai",
+		english: "farewell party",
+	},
+	{
+		kanji: "歓迎会",
+		kana: "かんげいかい",
+		romaji: "kangeikai",
+		english: "welcome party",
+	},
+	{
+		kanji: "ピクニック",
+		kana: "ぴくにっく",
+		romaji: "pikunikku",
+		english: "picnic",
+	},
+	{
+		kanji: "お祝い",
+		kana: "おいわい",
+		romaji: "oiwai",
+		english: "celebration",
+	},
+	{
+		kanji: "結婚式",
+		kana: "けっこんしき",
+		romaji: "kekkonshiki",
+		english: "wedding ceremony",
+	},
+	{
+		kanji: "お祭り",
+		kana: "おまつり",
+		romaji: "omatsu",
+		english: "festival",
+	},
+	{
+		kanji: "キャンプ",
+		kana: "きゃんぷ",
+		romaji: "kyanpu",
+		english: "camp",
+	},
+	{
+		kanji: "コンサート",
+		kana: "こんさーと",
+		romaji: "konsa-to",
+		english: "concert",
+	},
+	{
+		kanji: "海上",
+		kana: "かいじょう",
+		romaji: "kaijou",
+		english: "at sea",
+	},
+	{
+		kanji: "満員",
+		kana: "まんいん",
+		romaji: "mannin",
+		english: "full house",
+	},
+	{
+		kanji: "奮闘",
+		kana: "ふんとう",
+		romaji: "funniki",
+		english: "struggle",
+	},
+	{
+		kanji: "受け付け",
+		kana: "うけつけ",
+		romaji: "uketsuke",
+		english: "reception",
+	},
+	{
+		kanji: "常夜",
+		kana: "とこや",
+		romaji: "tokoya",
+		english: "night duty",
+	},
+	{
+		kanji: "郵便局",
+		kana: "ゆうびんきょく",
+		romaji: "yuubinkyoku",
+		english: "post office",
+	},
+	{
+		kanji: "教会",
+		kana: "きょうかい",
+		romaji: "kyoukai",
+		english: "church",
+	},
+	{
+		kanji: "飛行場",
+		kana: "ひこうじょう",
+		romaji: "hikoujou",
+		english: "airport",
+	},
+	{
+		kanji: "奮闘",
+		kana: "ふんとう",
+		romaji: "funniki",
+		english: "struggle",
+	},
+	{
+		kanji: "乾杯",
+		kana: "かんぱい",
+		romaji: "kanpai",
+		english: "cheers",
+	},
+	{
+		kanji: "当たる",
+		kana: "あたる",
+		romaji: "ataru",
+		english: "hit",
+	},
+	{
+		kanji: "用意",
+		kana: "ようい",
+		romaji: "youi",
+		english: "preparation",
+	},
+	{
+		kanji: "用意する",
+		kana: "よういする",
+		romaji: "youisuru",
+		english: "prepare",
+	},
+	{
+		kanji: "利用",
+		kana: "りよう",
+		romaji: "riyou",
+		english: "utilization",
+	},
+	{
+		kanji: "利用する",
+		kana: "りようする",
+		romaji: "riyousuru",
+		english: "utilize",
+	},
+	{
+		kanji: "結婚",
+		kana: "けっこん",
+		romaji: "kekkon",
+		english: "marriage",
+	},
+	{
+		kanji: "結婚する",
+		kana: "けっこんする",
+		romaji: "kekkonsuru",
+		english: "get married",
+	},
+	{
+		kanji: "準備",
+		kana: "じゅんび",
+		romaji: "junbi",
+		english: "preparation",
+	},
+	{
+		kanji: "準備する",
+		kana: "じゅんびする",
+		romaji: "junbisuru",
+		english: "prepare",
+	},
+	{
+		kanji: "挨拶",
+		kana: "あいさつ",
+		romaji: "aisatsu",
+		english: "greeting",
+	},
+	{
+		kanji: "挨拶する",
+		kana: "あいさつする",
+		romaji: "aisatsusuru",
+		english: "greet",
+	},
+	{
+		kanji: "ビックリ",
+		kana: "びっくり",
+		romaji: "bikkuri",
+		english: "surprise",
+	},
+	{
+		kanji: "ビックリする",
+		kana: "びっくりする",
+		romaji: "bikkurisuru",
+		english: "be surprised",
+	},
+	{
+		kanji: "驚く",
+		kana: "おどろく",
+		romaji: "odoroku",
+		english: "be amazed",
+	},
+	{
+		kanji: "知らせる",
+		kana: "しらせる",
+		romaji: "shiraseru",
+		english: "inform",
+	},
+	{
+		kanji: "決まる",
+		kana: "きまる",
+		romaji: "kimaru",
+		english: "be decided",
+	},
+	{
+		kanji: "行う",
+		kana: "おこなう",
+		romaji: "okonau",
+		english: "perform",
+	},
+	{
+		kanji: "楽しい",
+		kana: "たのしい",
+		romaji: "tanoshii",
+		english: "fun",
+	},
+	{
+		kanji: "嬉しい",
+		kana: "うれしい",
+		romaji: "ureshii",
+		english: "happy",
+	},
+	{
+		kanji: "悲しい",
+		kana: "かなしい",
+		romaji: "kanashii",
+		english: "sad",
+	},
+	{
+		kanji: "寂しい",
+		kana: "さびしい",
+		romaji: "sabishii",
+		english: "lonely",
+	},
+	{
+		kanji: "恥ずかしい",
+		kana: "はずかしい",
+		romaji: "hazukashii",
+		english: "embarrassed",
+	},
+	{
+		kanji: "苦しい",
+		kana: "くるしい",
+		romaji: "kurushii",
+		english: "painful",
+	},
+	{
+		kanji: "別々",
+		kana: "べつべつ",
+		romaji: "betsubetsu",
+		english: "separate",
+	},
+	{
+		kanji: "必要な",
+		kana: "ひつような",
+		romaji: "hitsuyouna",
+		english: "necessary",
+	},
+	{
+		kanji: "無理な",
+		kana: "むりな",
+		romaji: "murina",
+		english: "impossible",
+	},
+	{
+		kanji: "ちゃんと",
+		kana: "ちゃんと",
+		romaji: "chanto",
+		english: "properly",
+	},
+	{
+		kanji: "間に",
+		kana: "あいだに",
+		romaji: "aida ni",
+		english: "between",
+	},
+	{
+		kanji: "それに",
+		kana: "それに",
+		romaji: "sore ni",
+		english: "besides",
+	},
+	{
+		kanji: "その上",
+		kana: "そのうえ",
+		romaji: "sono ue",
+		english: "moreover",
+	},
+	{
+		kanji: "所で",
+		kana: "ところで",
+		romaji: "tokoro de",
+		english: "by the way",
+	},
+	{
+		kanji: "途切れず",
+		kana: "とぎれず",
+		romaji: "toutou",
+		english: "continuously",
+	},
+	{
+		kanji: "どんどん",
+		kana: "どんどん",
+		romaji: "dondon",
+		english: "rapidly",
+	},
+];
 
 export const vocabularies = {
 	"Chapter 1": chapter1,
@@ -5239,11 +5545,12 @@ export const vocabularies = {
 	"Chapter 18": chapter18,
 	"Chapter 19": chapter19,
 	"Chapter 20": chapter20,
-	"Kanji 1": kanji1,
-	"Kanji 2": kanji2,
-	"Kanji 3": kanji3,
-	"Kanji 4": kanji4,
-	"Kanji 5": kanji5,
-	"Kanji 6": kanji6,
+	// "Kanji 1": kanji1,
+	// "Kanji 2": kanji2,
+	// "Kanji 3": kanji3,
+	// "Kanji 4": kanji4,
+	// "Kanji 5": kanji5,
+	// "Kanji 6": kanji6,
+	"Ume Goi 3": umeGoi3,
 	// More categories and vocabularies here...
 };
