@@ -5511,7 +5511,7 @@ const umeGoi3 = [
 ];
 
 export const vocabularies = {
-	"Chapter 1": chapter1,
+	// "Chapter 1": chapter1,
 	Countries: countries,
 	Family: family,
 	Demonstratives: demonstratives,
